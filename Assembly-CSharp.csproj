@@ -52,8 +52,64 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\ChatSystem.cs" />
      <Compile Include="Assets\Scripts\ChatNode.cs" />
+     <Compile Include="Assets\Scripts\ChatSystem.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\01_Basic\Cell.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\05_Voronoi\Context.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\08_GridView\GridView.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\05_Voronoi\ItemData.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\08_GridView\Context.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\05_Voronoi\Example05.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\08_GridView\ItemData.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\06_LoopTabBar\ScrollView.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\02_FocusOn\Example02.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\07_ScrollRect\Alignment.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\03_InfiniteScroll\Cell.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\06_LoopTabBar\Context.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\07_ScrollRect\ScrollView.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\01_Basic\Example01.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\Common\ScenesDropdown.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\02_FocusOn\Cell.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\08_GridView\Alignment.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\05_Voronoi\ScrollView.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\01_Basic\ItemData.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\01_Basic\ScrollView.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\08_GridView\Cell.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\06_LoopTabBar\Tab.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\04_Metaball\Background.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\09_LoadTexture\TextureLoader.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\06_LoopTabBar\SlideScreenTransition.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\08_GridView\Example08.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\04_Metaball\Cell.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\06_LoopTabBar\ItemData.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\09_LoadTexture\Example09.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\09_LoadTexture\ScrollView.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\04_Metaball\Context.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\03_InfiniteScroll\Example03.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\02_FocusOn\Context.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\04_Metaball\Example04.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\06_LoopTabBar\Example06.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\02_FocusOn\ItemData.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\09_LoadTexture\ItemData.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\07_ScrollRect\Cell.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\03_InfiniteScroll\ScrollView.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\07_ScrollRect\Context.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\05_Voronoi\Cell.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\03_InfiniteScroll\Context.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\02_FocusOn\ScrollView.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\04_Metaball\ScrollView.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\05_Voronoi\Background.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\07_ScrollRect\ItemData.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\03_InfiniteScroll\ItemData.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\04_Metaball\ItemData.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\06_LoopTabBar\Window.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\07_ScrollRect\Example07.cs" />
+     <Compile Include="Assets\FancyScrollView\Examples\Sources\09_LoadTexture\Cell.cs" />
+     <None Include="Assets\FancyScrollView\Examples\Sources\04_Metaball\Metaball.shader" />
+     <None Include="Assets\FancyScrollView\Examples\Sources\04_Metaball\Metaball.hlsl" />
+     <None Include="Assets\FancyScrollView\Examples\Sources\05_Voronoi\Voronoi.hlsl" />
+     <None Include="Assets\FancyScrollView\Examples\Sources\Common\Common.cginc" />
+     <None Include="Assets\FancyScrollView\Examples\Sources\05_Voronoi\Voronoi.shader" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -653,6 +709,14 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="FancyScrollView.Editor.csproj">
+      <Project>{2c29b053-d78c-efb0-4fe7-aa2809956e85}</Project>
+      <Name>FancyScrollView.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="FancyScrollView.csproj">
+      <Project>{69dd1821-f291-7592-cbbf-92cbfb3484b3}</Project>
+      <Name>FancyScrollView</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

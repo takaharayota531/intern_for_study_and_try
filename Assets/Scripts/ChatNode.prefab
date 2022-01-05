@@ -215,6 +215,7 @@ GameObject:
   - component: {fileID: 3076384956047965319}
   - component: {fileID: 8948844582427075139}
   - component: {fileID: 8325660610139940939}
+  - component: {fileID: -2767504521651664845}
   m_Layer: 5
   m_Name: ChatNode
   m_TagString: Untagged
@@ -307,6 +308,19 @@ MonoBehaviour:
   chatIcon: {fileID: 9136304940893588851}
   mineSprite: {fileID: 21300000, guid: eed8c9ba9e4737e449b6f7fd345247dd, type: 3}
   othersSprite: {fileID: 21300000, guid: 4f5fe9383751abd43bd951bcdce97304, type: 3}
+--- !u!114 &-2767504521651664845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4073620920822171848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 022988132a9a795408b43c71ece0bff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: {fileID: 7295833323255895436}
 --- !u!1 &5428011796846361111
 GameObject:
   m_ObjectHideFlags: 0

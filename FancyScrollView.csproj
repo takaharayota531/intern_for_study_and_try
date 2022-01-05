@@ -53,22 +53,22 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\FancyScrollView\Sources\Runtime\GridView\IFancyCellGroupContext.cs" />
+     <Compile Include="Assets\FancyScrollView\Sources\Runtime\ScrollRect\IFancyScrollRectContext.cs" />
      <Compile Include="Assets\FancyScrollView\Sources\Runtime\GridView\FancyCellGroup.cs" />
      <Compile Include="Assets\FancyScrollView\Sources\Runtime\Scroller\EasingCore.cs" />
-     <Compile Include="Assets\FancyScrollView\Sources\Runtime\ScrollRect\FancyScrollRectCell.cs" />
+     <Compile Include="Assets\FancyScrollView\Sources\Runtime\GridView\FancyGridViewContext.cs" />
+     <Compile Include="Assets\FancyScrollView\Sources\Runtime\GridView\FancyGridViewCell.cs" />
      <Compile Include="Assets\FancyScrollView\Sources\Runtime\Core\FancyCell.cs" />
      <Compile Include="Assets\FancyScrollView\Sources\Runtime\Scroller\MovementType.cs" />
-     <Compile Include="Assets\FancyScrollView\Sources\Runtime\Scroller\ScrollDirection.cs" />
+     <Compile Include="Assets\FancyScrollView\Sources\Runtime\Core\FancyScrollView.cs" />
+     <Compile Include="Assets\FancyScrollView\Sources\Runtime\Scroller\Scroller.cs" />
+     <Compile Include="Assets\FancyScrollView\Sources\Runtime\GridView\IFancyGridViewContext.cs" />
      <Compile Include="Assets\FancyScrollView\Sources\Runtime\GridView\FancyGridView.cs" />
      <Compile Include="Assets\FancyScrollView\Sources\Runtime\ScrollRect\FancyScrollRectContext.cs" />
-     <Compile Include="Assets\FancyScrollView\Sources\Runtime\ScrollRect\FancyScrollRect.cs" />
-     <Compile Include="Assets\FancyScrollView\Sources\Runtime\Core\FancyScrollView.cs" />
-     <Compile Include="Assets\FancyScrollView\Sources\Runtime\GridView\IFancyGridViewContext.cs" />
-     <Compile Include="Assets\FancyScrollView\Sources\Runtime\GridView\FancyGridViewContext.cs" />
+     <Compile Include="Assets\FancyScrollView\Sources\Runtime\ScrollRect\FancyScrollRectCell.cs" />
      <Compile Include="Assets\FancyScrollView\Sources\Runtime\Scroller\MovementDirection.cs" />
-     <Compile Include="Assets\FancyScrollView\Sources\Runtime\Scroller\Scroller.cs" />
-     <Compile Include="Assets\FancyScrollView\Sources\Runtime\GridView\FancyGridViewCell.cs" />
-     <Compile Include="Assets\FancyScrollView\Sources\Runtime\ScrollRect\IFancyScrollRectContext.cs" />
+     <Compile Include="Assets\FancyScrollView\Sources\Runtime\Scroller\ScrollDirection.cs" />
+     <Compile Include="Assets\FancyScrollView\Sources\Runtime\ScrollRect\FancyScrollRect.cs" />
      <None Include="Assets\FancyScrollView\Sources\Runtime\FancyScrollView.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

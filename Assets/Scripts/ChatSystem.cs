@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
+using FancyScrollView.Takahara;
 using UnityEngine;
 using UnityEngine.UI;
-
+using FancyScrollView.Takahara;
 
 public class ChatSystem : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class ChatSystem : MonoBehaviour
     [SerializeField] private InputField chatInputField;
     [SerializeField] private GameObject chatNodePrefab;
     [SerializeField] private GameObject content;
+    [SerializeField] private CountNode countNode;
 
 
     public void OnClickMineButton()
@@ -33,7 +35,7 @@ public class ChatSystem : MonoBehaviour
         ChatData data = new ChatData(id, roll, str);
 
         var chatNode = (GameObject) Instantiate<GameObject>(chatNodePrefab, content.transform, false);
-
+        countNode.PlusIndex();
         chatNode.GetComponent<ChatNode>().Init(data);
         // Debug.Log(("id:" + id + " roll:" + roll.ToString() + " body:" + str));
     }

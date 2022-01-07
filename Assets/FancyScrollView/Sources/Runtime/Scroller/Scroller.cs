@@ -13,11 +13,13 @@ using EasingCore;
 namespace FancyScrollView
 {
     /// <summary>
-    /// スクロール位置の制御を行うコンポーネント.
+    /// スクロール位置の制御を行うスクリプト→ここが多分一番大切だと思われる
     /// </summary>
-    public class Scroller : UIBehaviour, IPointerUpHandler, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IScrollHandler
+    public class Scroller : UIBehaviour, IPointerUpHandler, IPointerDownHandler, IBeginDragHandler, IEndDragHandler,
+        IDragHandler, IScrollHandler
     {
         [SerializeField] RectTransform viewport = default;
+        //→viewportこれが自分自身
 
         /// <summary>
         /// ビューポートのサイズ.
@@ -88,7 +90,8 @@ namespace FancyScrollView
             set => decelerationRate = value;
         }
 
-        [SerializeField] Snap snap = new Snap {
+        [SerializeField] Snap snap = new Snap
+        {
             Enable = true,
             VelocityThreshold = 0.5f,
             Duration = 0.3f,
@@ -236,7 +239,8 @@ namespace FancyScrollView
         /// <param name="position">スクロール位置. <c>0f</c> ~ <c>totalCount - 1f</c> の範囲.</param>
         /// <param name="duration">移動にかける秒数.</param>
         /// <param name="onComplete">移動が完了した際に呼び出されるコールバック.</param>
-        public void ScrollTo(float position, float duration, Action onComplete = null) => ScrollTo(position, duration, Ease.OutCubic, onComplete);
+        public void ScrollTo(float position, float duration, Action onComplete = null) =>
+            ScrollTo(position, duration, Ease.OutCubic, onComplete);
 
         /// <summary>
         /// 指定した位置まで移動します.
@@ -245,7 +249,8 @@ namespace FancyScrollView
         /// <param name="duration">移動にかける秒数.</param>
         /// <param name="easing">移動に使用するイージング.</param>
         /// <param name="onComplete">移動が完了した際に呼び出されるコールバック.</param>
-        public void ScrollTo(float position, float duration, Ease easing, Action onComplete = null) => ScrollTo(position, duration, Easing.Get(easing), onComplete);
+        public void ScrollTo(float position, float duration, Ease easing, Action onComplete = null) =>
+            ScrollTo(position, duration, Easing.Get(easing), onComplete);
 
         /// <summary>
         /// 指定した位置まで移動します.
@@ -355,11 +360,11 @@ namespace FancyScrollView
             delta.y *= -1;
             var scrollDelta = scrollDirection == ScrollDirection.Horizontal
                 ? Mathf.Abs(delta.y) > Mathf.Abs(delta.x)
-                        ? delta.y
-                        : delta.x
+                    ? delta.y
+                    : delta.x
                 : Mathf.Abs(delta.x) > Mathf.Abs(delta.y)
-                        ? delta.x
-                        : delta.y;
+                    ? delta.x
+                    : delta.y;
 
             if (eventData.IsScrolling())
             {
@@ -507,7 +512,7 @@ namespace FancyScrollView
                 else
                 {
                     var alpha = Mathf.Clamp01((Time.unscaledTime - autoScrollState.StartTime) /
-                                               Mathf.Max(autoScrollState.Duration, float.Epsilon));
+                                              Mathf.Max(autoScrollState.Duration, float.Epsilon));
                     position = Mathf.LerpUnclamped(scrollStartPosition, autoScrollState.EndPosition,
                         autoScrollState.EasingFunction(alpha));
 
@@ -519,7 +524,8 @@ namespace FancyScrollView
 
                 UpdatePosition(position);
             }
-            else if (!(dragging || scrolling) && (!Mathf.Approximately(offset, 0f) || !Mathf.Approximately(velocity, 0f)))
+            else if (!(dragging || scrolling) &&
+                     (!Mathf.Approximately(offset, 0f) || !Mathf.Approximately(velocity, 0f)))
             {
                 var position = currentPosition;
 

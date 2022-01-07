@@ -12,13 +12,13 @@ namespace FancyScrollView.Takahara
         [SerializeField] private MyScrollView scrollView = default;
         [SerializeField] private CountNode countNode;
 
-        //
-        // private void Start()
-        // {
-        //     var items = Enumerable.Range(0, 20)
-        //         .Select(i => new MyItemData($"Cell {i}"))
-        //         .ToArray();
-        //     scrollView.UpdateData(items);
-        // }
+
+        private void Start()
+        {
+            var items = Enumerable.Range(0, 20)
+                .Select(i => new MyItemData($"Cell {i}"))
+                .ToArray();
+            scrollView.UpdateData(items);
+        }
     }
 }

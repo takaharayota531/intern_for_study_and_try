@@ -1,17 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using System;
 using FancyScrollView;
 
-public class Context : FancyScrollRectContext
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
+namespace FancyScrollView.TakaharaNext{
 
-    // Update is called once per frame
-    void Update()
+
+    class Context:FancyScrollRectContext
     {
+        public int SelectedIndex = -1;
+        public Action<int> OnCellClicked;
+
     }
 }

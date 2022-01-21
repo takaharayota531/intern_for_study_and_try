@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FancyScrollView", "FancyScrollView.csproj", "{73279cc9-5c03-1781-5293-3bdaf378f053}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{48cbdb99-99f3-0803-eca6-d507eb1f677c}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FancyScrollView.Editor", "FancyScrollView.Editor.csproj", "{057b4365-11ba-95a8-8e9b-bbe44c445541}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73279cc9-5c03-1781-5293-3bdaf378f053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73279cc9-5c03-1781-5293-3bdaf378f053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48cbdb99-99f3-0803-eca6-d507eb1f677c}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48cbdb99-99f3-0803-eca6-d507eb1f677c}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{057b4365-11ba-95a8-8e9b-bbe44c445541}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{057b4365-11ba-95a8-8e9b-bbe44c445541}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

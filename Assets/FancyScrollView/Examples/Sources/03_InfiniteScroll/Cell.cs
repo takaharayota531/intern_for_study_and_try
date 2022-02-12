@@ -11,7 +11,7 @@ namespace FancyScrollView.Example03
 {
     class Cell : FancyCell<ItemData, Context>
     {
-        [SerializeField] Animator animator = default;
+          [SerializeField] Animator animator = default;
         [SerializeField] Text message = default;
         [SerializeField] Text messageLarge = default;
         [SerializeField] Image image = default;
@@ -50,6 +50,8 @@ namespace FancyScrollView.Example03
 
             animator.speed = 0;
         }
+
+       
 
         // GameObject が非アクティブになると Animator がリセットされてしまうため
         // 現在位置を保持しておいて OnEnable のタイミングで現在位置を再設定します

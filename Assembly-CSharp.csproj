@@ -50,6 +50,7 @@
      <Compile Include="Assets\FancyScrollView\Examples\Sources\09_LoadTexture\Cell.cs" />
      <Compile Include="Assets\Takahara\Scripts\EntryPoint.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\02_FocusOn\Example02.cs" />
+     <Compile Include="Assets\TakaharaNext\Alignment.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\03_InfiniteScroll\Example03.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\05_Voronoi\Cell.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\08_GridView\Context.cs" />
@@ -76,6 +77,7 @@
      <Compile Include="Assets\FancyScrollView\Examples\Sources\04_Metaball\ItemData.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\05_Voronoi\ScrollView.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\04_Metaball\Context.cs" />
+     <Compile Include="Assets\TakaharaNext\ExampleTakahara.cs" />
      <Compile Include="Assets\Scripts\ChatSystem.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\03_InfiniteScroll\ItemData.cs" />
      <Compile Include="Assets\Takahara\Scripts\MyScrollView.cs" />
@@ -99,7 +101,10 @@
      <Compile Include="Assets\FancyScrollView\Examples\Sources\02_FocusOn\Context.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\02_FocusOn\ItemData.cs" />
      <Compile Include="Assets\Takahara\Scripts\MyScrollViewCell.cs" />
-     <Compile Include="Assets\TakaharaNext\Alignment.cs" />
+     <Compile Include="Assets\TakaharaNext\shakyo.cs" />
+     <Compile Include="Assets\TakaharaNext\Shakyo1.cs" />
+     <Compile Include="Assets\TakaharaNext\Shakyo2.cs" />
+     <Compile Include="Assets\button.cs" />
      <None Include="Assets\FancyScrollView\Examples\Sources\04_Metaball\Metaball.shader" />
      <None Include="Assets\FancyScrollView\Examples\Sources\04_Metaball\Metaball.hlsl" />
      <None Include="Assets\FancyScrollView\Examples\Sources\05_Voronoi\Voronoi.hlsl" />

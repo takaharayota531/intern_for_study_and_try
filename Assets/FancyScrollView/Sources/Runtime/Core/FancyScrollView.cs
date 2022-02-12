@@ -108,6 +108,7 @@ namespace FancyScrollView
         /// <param name="position">スクロール位置.</param>
         protected virtual void UpdatePosition(float position) => UpdatePosition(position, false);
 
+        //基本的にforceRefreshはfalseみたい
         void UpdatePosition(float position, bool forceRefresh)
         {
             if (!initialized)
@@ -168,6 +169,8 @@ namespace FancyScrollView
 
                 if (index < 0 || index >= ItemsSource.Count || position > 1f)
                 {
+                    //setVisibleなんだね
+                    //これsetActiveでした
                     cell.SetVisible(false);
                     continue;
                 }

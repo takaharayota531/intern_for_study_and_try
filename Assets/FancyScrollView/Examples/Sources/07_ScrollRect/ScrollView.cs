@@ -8,7 +8,10 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using EasingCore;
-
+/// <summary>
+/// 相対的な中身は全部合わせるようにする
+/// 後はcontent、viewportがしっかり一致するようにしておきたい
+/// </summary>
 namespace FancyScrollView.Example07
 {
     class ScrollView : FancyScrollRect<ItemData, Context>
@@ -81,6 +84,8 @@ namespace FancyScrollView.Example07
                 case Alignment.Lower: return 1.0f;
                 default: return GetAlignment(Alignment.Middle);
             }
+          //  return 0.5f;
+
         }
 
         void UpdateSelection(int index)

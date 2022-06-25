@@ -64,6 +64,7 @@
      <Compile Include="Assets\FancyScrollView\Examples\Sources\02_FocusOn\Cell.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\03_InfiniteScroll\ScrollView.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\06_LoopTabBar\Window.cs" />
+     <Compile Include="Assets\TakaharaNext\shakyo.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\Common\ScenesDropdown.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\01_Basic\ScrollView.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\09_LoadTexture\Example09.cs" />
@@ -77,6 +78,7 @@
      <Compile Include="Assets\FancyScrollView\Examples\Sources\04_Metaball\ItemData.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\05_Voronoi\ScrollView.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\04_Metaball\Context.cs" />
+     <Compile Include="Assets\TakaharaNext\Shakyo2.cs" />
      <Compile Include="Assets\TakaharaNext\ExampleTakahara.cs" />
      <Compile Include="Assets\Scripts\ChatSystem.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\03_InfiniteScroll\ItemData.cs" />
@@ -98,13 +100,13 @@
      <Compile Include="Assets\FancyScrollView\Examples\Sources\06_LoopTabBar\ScrollView.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\03_InfiniteScroll\Cell.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\06_LoopTabBar\SlideScreenTransition.cs" />
+     <Compile Include="Assets\button.cs" />
+     <Compile Include="Assets\TakaharaNext\Shakyo1.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\02_FocusOn\Context.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\02_FocusOn\ItemData.cs" />
      <Compile Include="Assets\Takahara\Scripts\MyScrollViewCell.cs" />
-     <Compile Include="Assets\TakaharaNext\shakyo.cs" />
-     <Compile Include="Assets\TakaharaNext\Shakyo1.cs" />
-     <Compile Include="Assets\TakaharaNext\Shakyo2.cs" />
-     <Compile Include="Assets\button.cs" />
+     <Compile Include="Assets\button\PopUpButton.cs" />
+     <Compile Include="Assets\button\ColorChange.cs" />
      <None Include="Assets\FancyScrollView\Examples\Sources\04_Metaball\Metaball.shader" />
      <None Include="Assets\FancyScrollView\Examples\Sources\04_Metaball\Metaball.hlsl" />
      <None Include="Assets\FancyScrollView\Examples\Sources\05_Voronoi\Voronoi.hlsl" />

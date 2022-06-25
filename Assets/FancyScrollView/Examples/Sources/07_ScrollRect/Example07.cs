@@ -9,6 +9,8 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using EasingCore;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace FancyScrollView.Example07
 {
@@ -38,27 +40,27 @@ namespace FancyScrollView.Example07
         //         TryParseValue(spacingInputField, 0, 100, value => scrollView.Spacing = value));
         //     spacingInputField.text = scrollView.Spacing.ToString();
 
-        //     // alignmentDropdown.AddOptions(Enum.GetNames(typeof(Alignment)).Select(x => new Dropdown.OptionData(x)).ToList());
-        //     // alignmentDropdown.onValueChanged.AddListener(_ => SelectCell());
-        //     // alignmentDropdown.value = (int)Alignment.Middle;
+        //     alignmentDropdown.AddOptions(Enum.GetNames(typeof(Alignment)).Select(x => new Dropdown.OptionData(x)).ToList());
+        //     alignmentDropdown.onValueChanged.AddListener(_ => SelectCell());
+        //     alignmentDropdown.value = (int)Alignment.Middle;
 
-        //     // selectIndexInputField.onValueChanged.AddListener(_ => SelectCell());
-        //     // selectIndexInputField.text = "10";
+        //     selectIndexInputField.onValueChanged.AddListener(_ => SelectCell());
+        //     selectIndexInputField.text = "10";
 
-        //     // dataCountInputField.onValueChanged.AddListener(_ =>
-        //     //     TryParseValue(dataCountInputField, 1, 99999, GenerateCells));
-        //     // dataCountInputField.text = "20";
+        //     dataCountInputField.onValueChanged.AddListener(_ =>
+        //         TryParseValue(dataCountInputField, 1, 99999, GenerateCells));
+        //     dataCountInputField.text = "20";
 
         //     scrollView.JumpTo(10);
         //    // NumberChange();
         // }
 
-        // public  void NumberChange(int i){
-        //     //TryParseValue(20, 0, 99999, GenerateCells);
-        //     GenerateCells(i);
+        public  void NumberChange(int i){
+            //TryParseValue(20, 0, 99999, GenerateCells);
+          //  GenerateCells(i);
 
 
-        // }
+        }
 
         void TryParseValue(InputField inputField, int min, int max, Action<int> success)
         {
@@ -76,25 +78,34 @@ namespace FancyScrollView.Example07
             success(value);
         }
 
-        // void SelectCell()
-        // {
-        //     if (scrollView.DataCount == 0)
-        //     {
-        //         return;
-        //     }
+    //     void SelectCell()
+    //     {
+    //         if (scrollView.DataCount == 0)
+    //         {
+    //             return;
+    //         }
 
-        //     TryParseValue(selectIndexInputField, 0, scrollView.DataCount - 1, index =>
-        //         scrollView.ScrollTo(index, 0.3f, Ease.InOutQuint, (Alignment)alignmentDropdown.value));
-        // }
+    //         TryParseValue(selectIndexInputField, 0, scrollView.DataCount - 1, index =>
+    //             scrollView.ScrollTo(index, 0.3f, Ease.InOutQuint, (Alignment)alignmentDropdown.value));
+    //     }
 
+    //     [SerializeField] private List<ChatData> chatNodeDataList = new List<ChatData>();
     //    public void GenerateCells(int dataCount)
     //     {
-    //         var items = Enumerable.Range(0, dataCount)
-    //             .Select(i => new ItemData($"Cell {i}"))
-    //             .ToArray();
+    //         // var items = Enumerable.Range(0, dataCount)
+    //         //     .Select(i => new ItemData($"Cell {i}"))
+    //         //     .ToArray();
+    //          List<ItemData> items = new List<ItemData>();
+    //         for (int i = 0; i < dataCount; i++)
+    //         {
+    //             ItemData tmp = new ItemData(chatNodeDataList[i]);
+    //             items.Add(tmp);
+
+    //         }
+
 
     //         scrollView.UpdateData(items);
-    //       //  SelectCell();
+    //        SelectCell();
     //     }
     }
 }

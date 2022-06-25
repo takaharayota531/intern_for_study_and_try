@@ -139,6 +139,7 @@ namespace FancyScrollView
             var addCount = Mathf.CeilToInt((1f - firstPosition) / cellInterval) - pool.Count;
             for (var i = 0; i < addCount; i++)
             {
+                //ここで生成している　高原
                 var cell = Instantiate(CellPrefab, cellContainer).GetComponent<FancyCell<TItemData, TContext>>();
                 if (cell == null)
                 {

@@ -34,7 +34,7 @@ public class ChatSystem : MonoBehaviour
 
     [SerializeField] private float paddingTop=10f;
     [SerializeField] private float paddingBottom=10f;
-    [SerializeField] private float spacing=10f;
+    [SerializeField] private VerticalLayoutGroup contentVertical;
     [SerializeField] private int dataCount;
 
 
@@ -105,7 +105,7 @@ public class ChatSystem : MonoBehaviour
     public void RayoutControl(){
         scrollView.PaddingTop = paddingTop;
         scrollView.PaddingBottom = paddingBottom;
-        scrollView.Spacing = spacing;
+        scrollView.Spacing = 30f;
 
     }
 }
